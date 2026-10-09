@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mengenal HTML untuk Pemula - PatriaTech</title>
+
+    <link rel="stylesheet" href="style_5.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <h1>Mengenal HTML untuk Pemula</h1>
+            <p>
+                Belajar HTML dari dasar, lengkap dengan materi,
+                contoh kode, dan penjelasannya.
+            </p>
+        </div>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html">Home</a>
+            <a href="index.html#artikel">Artikel</a>
+            <a href="index.html#kategori">Kategori</a>
+        </div>
+    </nav>
+
+    <!-- ISI MATERI -->
+    <main class="container article">
+
+        <!-- MATERI 1 -->
+        <section>
+            <h2>1. Apa Itu HTML?</h2>
+
+            <p>
+                HTML adalah singkatan dari
+                <strong>HyperText Markup Language</strong>.
+                HTML digunakan untuk membuat struktur halaman website,
+                seperti judul, paragraf, gambar, tautan, dan formulir.
+            </p>
+
+            <h3>Contoh Kode</h3>
+
+            <pre><code>&lt;h1&gt;Halo, PatriaTech!&lt;/h1&gt;
+&lt;p&gt;Saya sedang belajar HTML.&lt;/p&gt;</code></pre>
+
+            <h3>Penjelasan</h3>
+
+            <ul>
+                <li><code>&lt;h1&gt;</code> untuk membuat judul utama.</li>
+                <li><code>&lt;p&gt;</code> untuk membuat paragraf.</li>
+            </ul>
+        </section>
+
+        <!-- MATERI 2 -->
+        <section>
+            <h2>2. Struktur Dasar HTML</h2>
+
+            <p>
+                Setiap halaman HTML memiliki struktur dasar
+                yang digunakan browser untuk membaca dokumen.
+            </p>
+
+            <h3>Contoh Kode</h3>
+
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="id"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Website Pertama&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Selamat Datang&lt;/h1&gt;
+    &lt;p&gt;Ini website pertama saya.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+            <h3>Penjelasan</h3>
+
+            <ul>
+                <li><code>&lt;!DOCTYPE html&gt;</code> menandakan dokumen HTML modern.</li>
+                <li><code>&lt;html&gt;</code> merupakan elemen utama HTML.</li>
+                <li><code>&lt;head&gt;</code> berisi informasi halaman.</li>
+                <li><code>&lt;title&gt;</code> menentukan judul tab browser.</li>
+                <li><code>&lt;body&gt;</code> berisi konten halaman.</li>
+            </ul>
+        </section>
+
+        <!-- MATERI 3 -->
+        <section>
+            <h2>3. Heading dan Paragraf</h2>
+
+            <p>
+                Heading digunakan untuk judul dan subjudul.
+                HTML memiliki enam tingkat heading, yaitu
+                <code>&lt;h1&gt;</code> sampai
+                <code>&lt;h6&gt;</code>.
+            </p>
+
+            <h3>Contoh Kode</h3>
+
+            <pre><code>&lt;h1&gt;Belajar HTML&lt;/h1&gt;
+&lt;h2&gt;Materi Dasar&lt;/h2&gt;
+&lt;h3&gt;Pengertian HTML&lt;/h3&gt;
+
+&lt;p&gt;HTML digunakan untuk membuat struktur website.&lt;/p&gt;</code></pre>
+
+            <h3>Penjelasan</h3>
+
+            <p>
+                Tag <code>&lt;h1&gt;</code> digunakan untuk judul utama,
+                sedangkan <code>&lt;h2&gt;</code> dan
+                <code>&lt;h3&gt;</code> digunakan untuk subjudul.
+                Tag <code>&lt;p&gt;</code> digunakan untuk paragraf.
+            </p>
+        </section>
+
+        <!-- MATERI 4 -->
+        <section>
+            <h2>4. Membuat Link</h2>
+
+            <p>
+                Link atau tautan digunakan untuk mengarahkan pengunjung
+                ke halaman lain atau website tertentu.
+            </p>
+
+            <h3>Contoh Kode</h3>
+
+            <pre><code>&lt;a href="https://example.com"&gt;
+    Kunjungi Website
+&lt;/a&gt;</code></pre>
+
+            <h3>Penjelasan</h3>
+
+            <p>
+                Tag <code>&lt;a&gt;</code> membuat tautan.
+                Atribut <code>href</code> menentukan alamat tujuan tautan.
+            </p>
+        </section>
+
+        <!-- MATERI 5 -->
+        <section>
+            <h2>5. Menampilkan Gambar</h2>
+
+            <p>
+                HTML menyediakan tag <code>&lt;img&gt;</code>
+                untuk menampilkan gambar pada halaman website.
+            </p>
+
+            <h3>Contoh Kode</h3>
+
+            <pre><code>&lt;img
+    src="gambar.jpg"
+    alt="Gambar pemandangan"
+    width="300"
+&gt;</code></pre>
+
+            <h3>Penjelasan</h3>
+
+            <ul>
+                <li><code>src</code> menentukan lokasi file gambar.</li>
+                <li><code>alt</code> memberikan teks alternatif gambar.</li>
+                <li><code>width</code> menentukan lebar gambar.</li>
+            </ul>
+
+            <p>
+                Pastikan file <code>gambar.jpg</code> tersedia
+                di lokasi yang sesuai.
+            </p>
+        </section>
+
+        <!-- MATERI 6 -->
+        <section>
+            <h2>6. Membuat Daftar</h2>
+
+            <p>
+                HTML memiliki daftar berpoin dan daftar bernomor.
+            </p>
+
+            <h3>Contoh Kode</h3>
+
+            <pre><code>&lt;h3&gt;Bahasa Website&lt;/h3&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;HTML&lt;/li&gt;
+    &lt;li&gt;CSS&lt;/li&gt;
+    &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;Belajar HTML&lt;/li&gt;
+    &lt;li&gt;Belajar CSS&lt;/li&gt;
+    &lt;li&gt;Belajar JavaScript&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+
+            <h3>Penjelasan</h3>
+
+            <ul>
+                <li><code>&lt;ul&gt;</code> membuat daftar berpoin.</li>
+                <li><code>&lt;ol&gt;</code> membuat daftar bernomor.</li>
+                <li><code>&lt;li&gt;</code> membuat setiap item daftar.</li>
+            </ul>
+        </section>
+
+        <!-- MATERI 7 -->
+        <section>
+            <h2>7. Membuat Tabel</h2>
+
+            <p>
+                Tabel digunakan untuk menyusun data dalam baris
+                dan kolom.
+            </p>
+
+            <h3>Contoh Kode</h3>
+
+            <pre><code>&lt;table border="1"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Nama&lt;/th&gt;
+        &lt;th&gt;Umur&lt;/th&gt;
+    &lt;/tr&gt;
+
+    &lt;tr&gt;
+        &lt;td&gt;Patria&lt;/td&gt;
+        &lt;td&gt;18&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+
+            <h3>Penjelasan</h3>
+
+            <ul>
+                <li><code>&lt;table&gt;</code> membuat tabel.</li>
+                <li><code>&lt;tr&gt;</code> membuat baris.</li>
+                <li><code>&lt;th&gt;</code> membuat sel judul.</li>
+                <li><code>&lt;td&gt;</code> membuat sel data.</li>
+            </ul>
+        </section>
+
+        <!-- MATERI 8 -->
+        <section>
+            <h2>8. Membuat Formulir</h2>
+
+            <p>
+                Formulir digunakan untuk menerima masukan
+                dari pengunjung website.
+            </p>
+
+            <h3>Contoh Kode</h3>
+
+            <pre><code>&lt;form&gt;
+    &lt;label for="nama"&gt;Nama:&lt;/label&gt;
+
+    &lt;input
+        type="text"
+        id="nama"
+        name="nama"
+        placeholder="Masukkan nama"
+    &gt;
+
+    &lt;button type="submit"&gt;Kirim&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+
+            <h3>Penjelasan</h3>
+
+            <ul>
+                <li><code>&lt;form&gt;</code> menjadi wadah formulir.</li>
+                <li><code>&lt;label&gt;</code> memberikan keterangan input.</li>
+                <li><code>&lt;input&gt;</code> menerima masukan.</li>
+                <li><code>&lt;button&gt;</code> membuat tombol.</li>
+            </ul>
+        </section>
+
+        <!-- MATERI 9 -->
+        <section>
+            <h2>9. Mengenal Atribut HTML</h2>
+
+            <p>
+                Atribut memberikan informasi tambahan
+                pada sebuah elemen HTML.
+            </p>
+
+            <h3>Contoh Kode</h3>
+
+            <pre><code>&lt;input
+    type="text"
+    placeholder="Tulis nama kamu"
+&gt;
+
+&lt;a href="https://example.com"&gt;
+    Buka Website
+&lt;/a&gt;</code></pre>
+
+            <h3>Penjelasan</h3>
+
+            <ul>
+                <li><code>type</code> menentukan jenis input.</li>
+                <li><code>placeholder</code> menampilkan petunjuk.</li>
+                <li><code>href</code> menentukan alamat tautan.</li>
+            </ul>
+        </section>
+
+        <!-- MATERI 10 -->
+        <section>
+            <h2>10. Membuat Website Sederhana</h2>
+
+            <p>
+                Sekarang gabungkan beberapa elemen HTML
+                untuk membuat halaman website sederhana.
+            </p>
+
+            <h3>Contoh Kode Lengkap</h3>
+
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="id"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport"
+          content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Website Pertamaku&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Selamat Datang&lt;/h1&gt;
+        &lt;p&gt;Ini website pertamaku.&lt;/p&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+        &lt;h2&gt;Tentang Saya&lt;/h2&gt;
+        &lt;p&gt;Saya sedang belajar membuat website.&lt;/p&gt;
+
+        &lt;a href="https://example.com"&gt;
+            Contoh Link
+        &lt;/a&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        &lt;p&gt;Website dibuat untuk belajar HTML.&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+            <h3>Penjelasan</h3>
+
+            <p>
+                Contoh ini menggunakan heading, paragraf, tautan,
+                serta elemen semantik seperti
+                <code>&lt;header&gt;</code>,
+                <code>&lt;main&gt;</code>, dan
+                <code>&lt;footer&gt;</code>.
+            </p>
+        </section>
+
+        <!-- KESIMPULAN -->
+        <section class="info">
+            <h2>Kesimpulan</h2>
+
+            <p>
+                HTML digunakan untuk membangun struktur halaman website.
+                Setelah memahami HTML, kamu bisa melanjutkan belajar CSS
+                untuk mempercantik tampilan dan JavaScript untuk menambahkan
+                interaksi.
+            </p>
+        </section>
+
+        <div class="back">
+            <a href="index.html#artikel">← Kembali ke Artikel</a>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 PatriaTech</p>
+    </footer>
+
+</body>
+</html>
